@@ -1,0 +1,12 @@
+@mixin botones($color) {
+    background-color: $color;
+    border-top: 3px;
+    border-color: #FFF;
+    padding: 10px;
+    border-radius: 05px;
+  }
+@mixin btn {
+    background-color: map-get($estilos , gray-color );
+    border: $border;
+    border-radius: 1em;
+}

@@ -1,0 +1,739 @@
+body {
+	width: 100%;
+	height: 2000px;
+	background-color: rgb(43, 43, 43);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.banner{
+	width: 100%;
+	height: 600px;
+	animation: banner 10s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+@keyframes banner{
+	0%, 20%{
+		background-image: url("https://images.unsplash.com/photo-1502209877429-d7c6df9eb3f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1166&q=80");
+	}
+	25%, 45%{
+		background-image: url("https://images.unsplash.com/photo-1502209877429-d7c6df9eb3f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1166&q=80");
+	}
+	50%, 70%{
+		background-image: url("https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+	}
+	75%, 100%{
+		background-image: url("https://s.yimg.com/ny/api/res/1.2/c2yYe7qQlV0HQTila0ueJA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTM3NDtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/S9f4_c_Nm6hsn0ItcDQmWQ--~B/aD02MzY7dz0xMjAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/the_independent_635/7ab77aa1a46b93001b04a3eb9d139bef");
+	}
+}
+.capa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+}
+.info{
+	z-index: 1;
+	width: 100%;
+	max-width: 550px;
+	text-align: center;
+}
+.info h1{
+	color: #fff;
+	font-size: 45px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+.info p{
+	color: #c7c7c7;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+.info a{
+	color: #fff;
+	text-decoration: none;
+	background: #3088e0;
+	padding: 16px 37px;
+	display: inline-block;
+	border-radius: 50px;
+}
+#box-1 {
+    width: cover;
+    height: 200px;
+    background-color: rgb(43, 43, 43);
+    background-attachment: fixed;
+	border-top: solid #fff 5px;
+	border-bottom: solid #fff 5px;
+    position: relative;
+}
+ .nav-link{
+	color: #fff !important;
+	margin: 7px;
+    border-radius: 10px;
+}
+.nav-link:hover {
+	background-color: #fff;
+	color: rgb(0, 0, 0) !important;
+    border-radius: 10px;
+	padding-inline: 10px;
+	transition: 1s;
+}
+.navbar-brand {
+	animation: naranja-neon 2s infinite alternate;
+	color: #fff !important;
+	font-size: 35px;
+	position: relative;
+	left: 8px;
+}
+.nav-2 {
+	color: #fff !important;
+	animation: azul-neon 2s infinite alternate;
+	text-decoration: none;
+	font-size: 37px;
+	position: relative;
+}
+@keyframes azul-neon {
+	0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+		text-shadow: 9px 9px 18px #3485ff, 
+					 3px 3px 5px #00246c, 
+					 -3px -3px 5px #00246c, 
+					 -9px -9px 27px #3485ff;
+	}
+
+	10%, 15%, 60% {
+		text-shadow: none;
+	}
+}
+
+@keyframes naranja-neon {
+	0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+		text-shadow: 0 -1px 4px #fff, 
+					 0 -2px 10px #ff0,
+					 0 -10px 20px #ff8000;
+	}
+
+	10%, 15%, 60% {
+		text-shadow: none;
+	}
+} 
+.img1 {
+	width: 100%;
+	height: 600px;
+	background-image: url(https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+	background-attachment: fixed;
+}
+
+.navbar-toggler-icon {
+	color: #fff !important;
+}
+/** CARD 1**/
+.card {
+    position: relative;
+	top: 50px;
+	left: 50px;
+	bottom: 300px;
+    width: 400px;
+    height: 500px;
+}
+
+.card .card_landing {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px rgb(255, 255, 255);
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+	border: solid;
+	border-color: #fff;
+	border-radius: 10px;
+}
+
+.card .card_landing h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+.card .card_info {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: 1s;
+}
+
+.card:hover .card_info {
+    top: 950px;
+}
+
+.card_info .head {
+    padding: 5px 0;
+    border-bottom: solid 1px #000000;
+}
+
+.card_info .head .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1719;
+}
+
+.card_info .head .description {
+    display: flex;
+    gap: 10px;
+}
+
+.card_info .head .description .item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.card_info .head .description .item i {
+    color: #bc8811;
+    font-size: 15px;
+}
+
+.card_info .head .description .item p {
+    font-size: 13px;
+}
+
+.card_info .content {
+    margin-top: 15px;
+}
+
+.card_info .content .list {
+    padding: 10px 15px;
+}
+
+.card_info .content .list p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card_info .action .btn {
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: #181817;
+    display: block;
+    margin-top: 10px;
+	position: relative;
+	top: 20px;
+	transition: 1s;
+}
+.card_info .action .btn:hover {
+	color: #181817;
+	background: #fff;
+}
+/** CARD 2**/
+.card2 {
+    position: relative;
+	left: 500px;
+	bottom: 550px;
+    width: 400px;
+    height: 500px;
+}
+
+.card2 .card_landing {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px rgb(255, 255, 255);
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+	border: solid;
+	border-color: #fff;
+	border-radius: 10px;
+}
+
+.card2 .card_landing h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+.card2 .card_info {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: 1s;
+}
+
+.card2:hover .card_info {
+    top: 950px;
+}
+
+.card_info .head {
+    padding: 5px 0;
+    border-bottom: solid 1px #000000;
+}
+
+.card_info .head .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1719;
+}
+
+.card_info .head .description {
+    display: flex;
+    gap: 10px;
+}
+
+.card_info .head .description .item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.card_info .head .description .item i {
+    color: #bc8811;
+    font-size: 15px;
+}
+
+.card_info .head .description .item p {
+    font-size: 13px;
+}
+
+.card_info .content {
+    margin-top: 15px;
+}
+
+.card_info .content .list {
+    padding: 10px 15px;
+}
+
+.card_info .content .list p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card_info .action .btn {
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: #181817;
+    display: block;
+    margin-top: 10px;
+	position: relative;
+	top: 20px;
+	transition: 1s;
+}
+.card_info .action .btn:hover {
+	color: #181817;
+	background: #fff;
+}
+/** Card 3 **/
+.card3 {
+    position: relative;
+	left: 950px;
+	bottom: 1048px;
+    width: 400px;
+    height: 500px;
+}
+
+.card3 .card_landing {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px rgb(255, 255, 255);
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+	border: solid;
+	border-color: #fff;
+	border-radius: 10px;
+}
+
+.card3 .card_landing h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+.card3 .card_info {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    border: solid #fff;
+    border-radius: 1em;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: 1s;
+}
+
+.card3:hover .card_info {
+    top: 930px;
+}
+
+.card_info .head {
+    padding: 5px 0;
+    border-bottom: solid 1px #000000;
+}
+
+.card_info .head .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1719;
+}
+
+.card_info .head .description {
+    display: flex;
+    gap: 10px;
+}
+
+.card_info .head .description .item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.card_info .head .description .item i {
+    color: #bc8811;
+    font-size: 15px;
+}
+
+.card_info .head .description .item p {
+    font-size: 13px;
+}
+
+.card_info .content {
+    margin-top: 15px;
+}
+
+.card_info .content .list {
+    padding: 10px 15px;
+}
+
+.card_info .content .list p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card_info .action .btn {
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: #181817;
+    display: block;
+    margin-top: 10px;
+	position: relative;
+	top: 20px;
+	transition: 1s;
+}
+.card_info .action .btn:hover {
+	color: #181817;
+	background: #fff;
+}
+/**Card 4**/
+.card4 {
+    position: relative;
+	left: 1400px;
+	bottom: 1550px;
+    width: 400px;
+    height: 500px;
+}
+
+.card4 .card_landing {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px rgb(255, 255, 255);
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+	border: solid;
+	border-color: #fff;
+	border-radius: 10px;
+}
+
+.card4 .card_landing h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+.card4 .card_info {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: 1s;
+}
+
+.card4:hover .card_info {
+    top: 950px;
+}
+
+.card_info .head {
+    padding: 5px 0;
+    border-bottom: solid 1px #000000;
+}
+
+.card_info .head .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1719;
+}
+
+.card_info .head .description {
+    display: flex;
+    gap: 10px;
+}
+
+.card_info .head .description .item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.card_info .head .description .item i {
+    color: #bc8811;
+    font-size: 15px;
+}
+
+.card_info .head .description .item p {
+    font-size: 13px;
+}
+
+.card_info .content {
+    margin-top: 15px;
+}
+
+.card_info .content .list {
+    padding: 10px 15px;
+}
+
+.card_info .content .list p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card_info .action .btn {
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: #181817;
+    display: block;
+    margin-top: 10px;
+	position: relative;
+	top: 20px;
+	transition: 1s;
+}
+.card_info .action .btn:hover {
+	color: #181817;
+	background: #fff;
+}
+/**Redes**/
+.card-2 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    float: left;
+    position: relative;
+    left: 620px;
+}
+
+.card-2 .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card-2 .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card-2 .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-2 .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.card-2 .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(46, 46, 46);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+    border: solid #fff 2px;
+    
+}
+.card-2 .back .link a {
+    color: #f3f3f3;
+    text-decoration: none;
+    position: relative;
+    top: 100%;
+}
+
+.card-2 .back h3 {
+    font-size: 30px;
+}
+.card-2:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card-2:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+.btn {
+    padding: 0.9em 1.6em;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    z-index: 0;
+    border-radius: 12px;
+   }
+   
+   .btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 46, 46);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+   }
+   /* glow */
+   .btn::before {
+    content: "";
+    background: linear-gradient(
+       45deg,
+       #FF0000, #002BFF, #FF00C8, #002BFF,
+         #FF0000, #002BFF, #FF00C8, #002BFF
+   );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+   }
+   
+   @keyframes glowing {
+    0% {
+     background-position: 0 0;
+    }
+   
+    50% {
+     background-position: 400% 0;
+    }
+   
+    100% {
+     background-position: 0 0;
+    }
+   }
+   
+   /* hover */
+   .btn:hover::before {
+    opacity: 1;
+   }
+   
+   .btn:active:after {
+    background: transparent;
+   }
+   
+   .btn:active {
+    color: #000;
+    font-weight: bold;
+   }
+   .btn:active .click {
+    color: #000;
+   }
+
